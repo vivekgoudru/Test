@@ -10,6 +10,8 @@ public class DriverFactory {
 	public void drivers() {
 		System.setProperty("webdriver.chrome.driver","webdriver\\chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
+		driver.get("https://google.com");
+		driver.close();
 		
 	}
 	
